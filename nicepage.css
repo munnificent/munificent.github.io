@@ -3,38 +3,38 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
-.loader {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  animation: rotate 1.5s ease-in infinite alternate;
-}
-.loader::before {
-  content: '';
-  position: absolute;
+.preloader {
+  position: fixed;
   left: 0;
+  top: 0;
+  right: 0;
   bottom: 0;
-  color: #FF3D00;
-  background: currentColor;
-  width: 64px;
-  height: 32px;
-  border-radius: 0 0 50px 50px;
-}
-.loader::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  background: #FFF;
-  width: 8px;
-  height: 64px;
-  animation: rotate 1.2s linear infinite alternate-reverse;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
 }
 
-@keyframes rotate {
-  100% { transform: rotate(360deg)}
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  background: url('images/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
 }
-      
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
 .fr-clearfix::after {
   clear: both;
   display: block;
