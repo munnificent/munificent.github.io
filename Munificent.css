@@ -32,7 +32,7 @@
 
 
  .u-section-1 {
-  background-image: url("/images/12x.png");
+  background-image: url("images/12x.png");
   background-position: 50% 50%;
 }
 
@@ -206,7 +206,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 590px;
-  background-image: url("/images/vr-attrakcion.jpg");
+  background-image: url("images/vr-attrakcion.jpg");
   background-position: 50% 50%;
 }
 
@@ -345,7 +345,7 @@
 }
 
 .u-section-3 .u-layout-cell-1 {
-  background-image: url("/images/pexels-anna-shvets-3987027.jpg");
+  background-image: url("images/pexels-anna-shvets-3987027.jpg");
   min-height: 485px;
 }
 
@@ -376,7 +376,7 @@
 .u-section-3 .u-image-3 {
   min-height: 584px;
   background-position: 50% 50%;
-  background-image: url("/images/3190.jpg");
+  background-image: url("images/3190.jpg");
 }
 
 .u-section-3 .u-container-layout-3 {
