@@ -1,1 +1,1 @@
-/* No JS */
+"use strict";
