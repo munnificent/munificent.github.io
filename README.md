@@ -1,4 +1,4 @@
-![munificent.github.io](thumbnail.png)
+![munificent.github.io](shkola.png)
 <br />
 
 ---
